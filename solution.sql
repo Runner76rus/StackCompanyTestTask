@@ -19,8 +19,6 @@ WHERE Counters.service = num_service::integer
 GROUP BY Accounts.number, Counters.service;
 $$ LANGUAGE 'sql';
 
-select *
-from stack.select_count_pok_by_service('300', '20230201');
 
 -- Solution2:
 -- Получает номер дома и месяц и возвращает все лицевые в этом доме ,
